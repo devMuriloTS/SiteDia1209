@@ -1,0 +1,149 @@
+*{
+    scroll-behavior: smooth;
+}
+
+/* Estilização do Cabeçalho */
+body{
+    margin: 0;
+    background-color: #9ff2f8;
+    box-sizing: border-box;
+}
+
+
+.fa-brands{
+    margin-left: 2em;
+}
+
+.container{
+    line-height: 150%;
+}
+
+ .header{
+    background-color:rgb(130, 217, 255);
+    align-items: center;
+    padding: 10px;
+    justify-content: center;
+    display: flex;
+} 
+
+.header h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.header .social a{
+    margin-left: 7em;
+    padding: 5px 15px;
+    text-decoration: none;
+}
+
+/* Estilização do menu lateral */
+
+.left{
+    float: left;
+    width: 13em;
+    height: 70em;
+    background-color: rgb(189, 253, 250);
+    margin: 0px;
+    margin-right: 1em;
+}
+
+ul{
+    border-left: 0.5em solid lightblue;
+    list-style-type: none;
+    padding: 1em;
+}
+
+a { 
+    color: #589a43;
+    display: block;
+    padding: 4px 16px;
+    text-decoration: none;
+}
+
+li a.active{
+    margin-bottom: 8px;
+    transition: transform 1s;
+    transform: translateX(0) scale(1);
+    transition: left 0.5s linear
+}
+
+li {
+    background-color: rgb(130, 217, 255);
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+.lista{
+    position: fixed;
+}
+
+li:hover,
+li:focus{
+    background: rgb(201, 255, 204);
+    transform: translateX(10px) scale(1.2);
+    border: 1px solid black ;
+    transition: all .3s ease-in-out
+}
+
+
+@keyframes slidein {
+    from {
+      margin-left: 20%;
+      width: 110%
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+  }
+
+  /* Estilização da parte principal */
+
+
+h2{
+    font-family: 'Rubik Puddles', cursive;
+    font-family: 'Shadows Into Light', cursive;
+    text-align: center;
+    font-size: 50px;
+}
+
+p{
+    text-indent: 3em;
+    text-align: justify;
+}
+
+content{
+    padding: 1em;
+}
+
+/* Tabela */
+table{
+    text-align: center;
+    border-collapse: collapse;
+    width: 80%;
+    margin: 30px 0;
+}
+
+td,
+th{
+    border: 1px solid rgb(153, 255, 63);
+    padding: 8px;
+}
+
+tr:nth-child(1),
+tr:nth-child(2),
+tr:nth-child(3){
+    background-color: rgb(255, 255, 255);
+}
+
+/* footer */
+.footer{
+    background-color: rgba(51, 136, 22, 0.7);
+    background-size: 2em;
+    margin-top: 70em;
+    margin-left: -3em;
+}
